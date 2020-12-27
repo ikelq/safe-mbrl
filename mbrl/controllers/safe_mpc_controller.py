@@ -74,6 +74,7 @@ class SafeMPC(object):
         self.model = model
         self.state = state
 
+
         soln, var = self.optimizer.obtain_solution()
         # if self.type == "CEM":
         #     self.prev_sol = np.concatenate([np.copy(soln)[self.action_dim:], np.zeros(self.action_dim)])
